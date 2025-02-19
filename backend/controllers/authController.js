@@ -8,7 +8,7 @@ const registerUser = async (req, res) => {
     console.log("Register endpoint hit"); // Debugging log
     console.log("Request Body:", req.body); // Log incoming request
   
-    const { name, email, password } = req.body;
+    const { name, email, password, role } = req.body;
     try {
       const existingUser = await User.findOne({ email });
       if (existingUser) {
@@ -17,7 +17,7 @@ const registerUser = async (req, res) => {
       }
   
       const hashedPassword = await bcrypt.hash(password, 10);
-      const newUser = new User({ name, email, password: hashedPassword });
+      const newUser = new User({ name, email, password: hashedPassword, role: role || "user" });
   
       await newUser.save();
       console.log("User registered successfully");
