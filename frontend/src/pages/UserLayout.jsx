@@ -110,13 +110,17 @@ const UserLayout = ({ role }) => {
 
   return (
     <div className="flex h-screen">
-      <Sidebar setActivePage={setActivePage} role={role} />
-      <div className="flex-1">
-        <Navbar />
-        <div className="p-5">{renderPage()}</div>
-      </div>
+        <div className="h-full w-64 bg-gray-900"> 
+            <Sidebar setActivePage={setActivePage} role={role} />
+        </div>
+        <div className="flex-1 flex flex-col"> 
+            <Navbar />
+            <div className="flex-1 p-5 overflow-auto"> 
+                {renderPage()}
+            </div>
+        </div>
     </div>
-  );
+);
 };
 
 export default UserLayout;

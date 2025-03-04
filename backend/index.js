@@ -1,8 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
+
 // Import MongoDB connection function
 const connectDB = require('./config/db');
+
+// Import Routes
+const authRoutes = require('./routes/authRoutes');
+const serviceRoutes = require("./routes/serviceRoutes");
+const userRoutes = require("./routes/userRoutes");
+console.log("Auth routes loaded...");
 
 dotenv.config();
 
@@ -19,10 +26,10 @@ app.use((req, res, next) => {
     next();
 });
 
-// Import Routes
-const authRoutes = require('./routes/authRoutes');
-console.log("Auth routes loaded...");
+// Use Routes
 app.use('/api/auth', authRoutes);
+app.use("/api/services", serviceRoutes);
+app.use("/api", userRoutes);
 
 // Connect to MongoDB
 connectDB();

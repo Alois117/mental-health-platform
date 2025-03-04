@@ -47,25 +47,25 @@ const Sidebar = ({ setActivePage, role }) => {
     ],
   };
 
-  return (
-    <div className="w-64 bg-gray-900 text-white h-screen p-5">
-      <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
-      <nav>
-        <ul>
-          {menuItems[role].map((item) => (
-            <li key={item.page} className="mb-4">
-              <button
-                onClick={() => setActivePage(item.page)}
-                className="flex items-center gap-2 w-full text-left"
-              >
-                {item.icon} {item.name}
-              </button>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </div>
-  );
+    return (
+        <div className="h-full w-64 bg-gray-900 text-white p-5"> 
+            <h2 className="text-2xl font-bold mb-6">Dashboard</h2>
+            <nav>
+                <ul>
+                    {menuItems[role].map((item) => (
+                        <li key={item.page} className="mb-4">
+                            <button
+                                onClick={() => setActivePage(item.page)}
+                                className="flex items-center gap-2 w-full text-left"
+                            >
+                                {item.icon} {item.name}
+                            </button>
+                        </li>
+                    ))}
+                </ul>
+            </nav>
+        </div>
+    );
 };
 
 export default Sidebar;
