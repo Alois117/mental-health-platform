@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import axios from "axios";
 
-const socket = io("http://localhost:5000"); // Replace with your backend server URL
+const socket = io("http://localhost:3000"); // Replace with your backend server URL
 
 const Chat = () => {
     const [messages, setMessages] = useState([]);
@@ -11,7 +11,7 @@ const Chat = () => {
 
     useEffect(() => {
         // Fetch chat history from backend
-        axios.get("http://localhost:5000/api/messages")
+        axios.get("http://localhost:3000/api/messages")
             .then(response => setMessages(response.data))
             .catch(error => console.error("Error fetching messages:", error));
 
@@ -34,7 +34,7 @@ const Chat = () => {
             };
             
             try {
-                await axios.post("http://localhost:5000/api/messages", message);
+                await axios.post("http://localhost:3000/api/messages", message);
                 socket.emit("message", message);
                 setMessages((prev) => [...prev, message]);
                 setInput("");

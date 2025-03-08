@@ -42,7 +42,7 @@ const UserLayout = ({ role }) => {
       case "chat":
         return <ChatBox />;
       case "videoCall":
-        return <VideoCall />;
+        return <VideoCall userRole={role}/>;
       case "settings":
         return <Settings />;
       default:
