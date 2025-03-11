@@ -11,7 +11,7 @@ const connectDB = require("./config/db");
 const authRoutes = require("./routes/authRoutes");
 const serviceRoutes = require("./routes/serviceRoutes");
 const userRoutes = require("./routes/userRoutes");
-const videoRoutes = require("./routes/videoRoutes");
+
 
 dotenv.config();
 
@@ -39,7 +39,7 @@ app.use((req, res, next) => {
 app.use("/api/auth", authRoutes);
 app.use("/api/services", serviceRoutes);
 app.use("/api", userRoutes);
-app.use("/api/video", videoRoutes);
+
 
 // Connect to MongoDB
 connectDB();
