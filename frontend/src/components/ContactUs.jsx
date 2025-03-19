@@ -48,8 +48,8 @@ const ContactUs = () => {
                 className="w-full p-3 border border-gray-300 rounded-md mb-4 focus:outline-none focus:border-primary"
               />
               <textarea
-                placeholder="Type Here...."
-                className="w-full p-3 border border-gray-300 rounded-md h-32 focus:outline-none focus:border-primary mb-6"
+                placeholder="Type Here......."
+                className="w-full p-3 border border-gray-300 rounded-md h-32 focus:outline-none focus:border-primary mb-12"
               ></textarea>
               <button
                 type="submit"

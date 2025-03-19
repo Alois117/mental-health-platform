@@ -46,14 +46,14 @@ const HomeBody = () => {
       </div>
 
       <div className="relative z-10 mt-12 flex flex-wrap justify-center gap-6">
-        <div className="bg-yellow-500 text-black p-6 rounded-lg flex flex-col items-center w-64">
+        <div className=" bg-[#1E3A5F] text-white p-6 rounded-lg flex flex-col items-center w-64">
           <FaUserMd size={40} />
           <h3 className="text-xl font-bold mt-3">Professional Consultation</h3>
           <p className="text-sm mt-2">
             Speak with our certified mental health experts.
           </p>
         </div>
-        <div className="bg-[#1E3A5F] text-white p-6 rounded-lg flex flex-col items-center w-64">
+        <div className="bg-yellow-500 text-black p-6 rounded-lg flex flex-col items-center w-64">
           <FaBrain size={40} />
           <h3 className="text-xl font-bold mt-3">Therapy Sessions</h3>
           <p className="text-sm mt-2">

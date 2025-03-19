@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1E3A5F] text-white py-12">
+    <footer className="bg-[#1E3A5F] text-white py-6">
       <div className="container mx-auto grid md:grid-cols-4 gap-8 px-6">
         {/* Brand Info */}
         <div>
@@ -50,7 +50,7 @@ const Footer = () => {
       </div>
 
       {/* Footer Bottom */}
-      <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+      <div className="border-t border-white mt-4 pt-2 text-center text-white">
         © {new Date().getFullYear()} AmaniCare. All Rights Reserved.
       </div>
     </footer>
