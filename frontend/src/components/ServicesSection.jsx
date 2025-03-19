@@ -3,14 +3,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import depressionImg from "../assets/depression.jpg";  
-import coupleImg from "../assets/couple.jpg";  
-import childImg from "../assets/child.jpg";  
-import anxietyImg from "../assets/anxiety.jpg";  
-import traumaImg from "../assets/trauma.jpg";  
-import addictionImg from "../assets/addiction.jpg";  
-import griefImg from "../assets/grief.jpg";  
-import confidenceImg from "../assets/confidence.jpg";  
+import depressionImg from "../assets/depressionImg.jpg";  
+import coupleImg from "../assets/coupleImg.jpg";  
+import childImg from "../assets/childImg.jpg";  
+import anxietyImg from "../assets/anxietyImg.jpg";  
+import traumaImg from "../assets/traumaImg.jpg";  
+import addictionImg from "../assets/addictionImg.jpg";  
+import griefImg from "../assets/griefImg.jpg";  
+import confidenceImg from "../assets/confidenceImg.jpg";  
 
 const services = [
   {
@@ -81,7 +81,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="py-16 bg-[#0F172A] text-white">
+    <section id="services" className="py-16 bg-[#0F172A] text-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
         <h2 className="text-3xl font-bold">We provide solutions</h2>
         <p className="text-lg text-gray-400">Our services prove our commitment to mental wellness</p>

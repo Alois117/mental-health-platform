@@ -3,7 +3,7 @@ import aboutImage1 from "../assets/about1.jpg";
 
 const AboutSection = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section id="about" className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6">
         {/* Left Content */}
         <div className="md:w-1/2 text-center md:text-left">
@@ -36,7 +36,7 @@ const AboutSection = () => {
             <div className="absolute bottom-[-40px] left-8 w-52 h-32 bg-white shadow-lg rounded-lg overflow-hidden">
               <iframe
                 className="w-full h-full rounded-lg"
-                src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                src="https://www.youtube.com/embed/rkZl2gsLUp4?si=hS3UPrZEWsHNHNLJ"
                 title="Mental Health Support Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

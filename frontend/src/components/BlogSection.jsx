@@ -26,7 +26,7 @@ const BlogSection = () => {
   ];
 
   return (
-    <section className="py-16 px-6 bg-gray-100">
+    <section id="blog" className="py-16 px-6 bg-gray-100">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-lg text-teal-600 italic">Our Blog</h2>
         <h1 className="text-4xl font-bold text-gray-800">Latest Articles & Insights</h1>
