@@ -26,6 +26,7 @@ const LoginPage = () => {
   
           // Dispatch a custom event to notify other components
           window.dispatchEvent(new Event("userLoggedIn"));
+   
   
           setMessage("Login successful!");
           setMessageType("success");
